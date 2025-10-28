@@ -1,0 +1,23 @@
+# IDEs e editores
+/.idea/
+
+# ambiente virtual
+.venv/
+
+# Banco de dados local
+db.sqlite3
+
+# Arquivos Python compilados
+__pycache__/
+*.pyc
+
+# Variáveis de ambiente
+/backend/.env
+
+# Arquivos temporários do sistema
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+build/
