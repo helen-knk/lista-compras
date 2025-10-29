@@ -2,7 +2,7 @@ from django.db import models
 
 class Item(models.Model):
     nome = models.CharField(max_length=100)
-    categoria = models.CharField(max_length=50, blank=True, null=True)
+    categoria = models.CharField(max_length=50, blank=True)
     comprado = models.BooleanField(default=False)
     criado_em = models.DateTimeField(auto_now_add=True)
 
