@@ -7,10 +7,14 @@ function ItemForm({ onAdd }) {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        await api.post('itens/', { nome, categoria, comprado: false});
-        setNome('');
-        setCategoria('');
-        onAdd();
+        try {
+            await api.post('itens/', { nome, categoria, comprado: false});
+            setNome('');
+            setCategoria('');
+            onAdd();
+        } catch (error) {
+            alert('Erro ao adicionar item. Tente novamente.');
+        }
     };
 
     return (
